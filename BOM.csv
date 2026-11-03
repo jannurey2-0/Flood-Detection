@@ -1,0 +1,55 @@
+Category,Item No.,Component,Specification,Qty,Unit,Unit Price (PHP),Total (PHP),Included in Build Budget,Remarks
+A. Electronics & Control,A1,ESP32 DevKit,ESP-WROOM-32 development board 30/38-pin,2,pcs,250,500,Yes,1 station unit + 1 spare/dev/gateway
+A. Electronics & Control,A2,JSN-SR04T waterproof ultrasonic,"Waterproof probe, range 25 cm - 4.5 m",1,pcs,400,400,Yes,"Non-contact; keeps sensor out of flood water; order first"
+A. Electronics & Control,A3,Float switch,"Vertical PP, normally open",2,pcs,80,160,Yes,Critical-height cross-check/failsafe + spare
+A. Electronics & Control,A4,2-channel relay module,"10 A, 3.3 V trigger, opto-isolated",1,pcs,120,120,Yes,Verify trigger works at 3.3 V logic before ordering
+A. Electronics & Control,A5,Micro limit switch,Lever type,2,pcs,50,100,Yes,Fully-up and fully-down end stops
+A. Electronics & Control,A6,12 V linear actuator,"100-150 mm stroke, 150-250 N, built-in limit switches, acme lead screw",1,pcs,2500,2500,Yes,"Self-locking; order first (longest lead time)"
+A. Electronics & Control,A7,12 V PSU,Desktop power supply 6 A,1,pcs,400,400,Yes,5 A absolute minimum
+A. Electronics & Control,A8,Buck converter,"LM2596, 12 V to 5 V",2,pcs,60,120,Yes,Powers ESP32 from 12 V rail; 1 spare
+A. Electronics & Control,A9,IP66 enclosure,ABS box with cable glands,1,pcs,450,450,Yes,Mount above expected splash level
+B. Wiring & Consumables,B1,Perfboard,10 x 15 cm,2,pcs,40,80,Yes,
+B. Wiring & Consumables,B2,Jumper wires,Assorted M-M / M-F set,1,set,80,80,Yes,
+B. Wiring & Consumables,B3,Screw terminal blocks,5 pcs,1,lot,60,60,Yes,
+B. Wiring & Consumables,B4,Spade/crimp connectors,Assorted,1,lot,80,80,Yes,
+B. Wiring & Consumables,B5,Fuse holder + fuses,"Blade type, 5 A and 2 A",1,lot,80,80,Yes,Protect PSU and actuator branch
+B. Wiring & Consumables,B6,Hook-up wire,"2-core 18 AWG, 3 m",1,lot,100,100,Yes,Actuator run
+B. Wiring & Consumables,B7,"Heat-shrink, zip ties, silica gel",Assorted,1,lot,120,120,Yes,
+C. Mechanical,C1,Plywood/acrylic sheet,Scale channel walls + barrier panel,1,lot,700,700,Yes,
+C. Mechanical,C2,Guide rails,Aluminum/acrylic channel for panel travel,1,lot,250,250,Yes,
+C. Mechanical,C3,Rubber gasket strip,"EPDM, 2 m",1,lot,150,150,Yes,Seal panel edges
+C. Mechanical,C4,Fasteners,"Hinges, brackets, bolts, screws",1,lot,100,100,Yes,
+D. Controls & Indicators,D1,Buzzer,"Active, 5 V",1,pcs,40,40,Yes,Local audible alarm at station
+D. Controls & Indicators,D2,Status LEDs,WS2812B strip or discrete LEDs + resistors,1,lot,150,150,Yes,
+D. Controls & Indicators,D3,Selector switch,3-position: AUTO / UP / DOWN,1,pcs,100,100,Yes,Manual override always wins
+D. Controls & Indicators,D4,Misc,"Connectors, standoffs",1,lot,10,10,Yes,
+E. Optional / Phase-2,E1,12 V SLA battery,"7 Ah, backup power",1,pcs,1000,1000,No,Strongly recommended: storms cause outages
+E. Optional / Phase-2,E2,Smart battery charger,12 V SLA charger,1,pcs,400,400,No,
+E. Optional / Phase-2,E3,GSM module,SIM800L,1,pcs,380,380,No,SMS alerts when internet is down
+E. Optional / Phase-2,E4,Prepaid SIM + load,,1,pcs,100,100,No,
+E. Optional / Phase-2,E5,LoRa module pair,SX1278 / RA-01,1,set,800,800,No,If river is beyond Wi-Fi/ESP-NOW range
+E. Optional / Phase-2,E6,H-bridge motor driver,BTS7960,1,pcs,200,200,No,Alternative to relays; PWM + stall sensing
+E. Optional / Phase-2,E7,Gateway enclosure,"IP66, second unit",1,pcs,450,450,No,For ESP-NOW gateway at barangay hall
+E. Optional / Phase-2,E8,Sensor mounting bracket,Stainless steel,1,pcs,200,200,No,
+F. Tools,F1,Soldering iron,Adjustable ~60 W,1,pcs,550,550,No,Reusable; may already own
+F. Tools,F2,Solder wire + flux,,1,lot,120,120,No,
+F. Tools,F3,Digital multimeter,,1,pcs,650,650,No,
+F. Tools,F4,Hand drill + bit set,,1,set,1100,1100,No,
+F. Tools,F5,Hot glue gun + glue sticks,,1,set,280,280,No,
+F. Tools,F6,Wire stripper / crimping tool,,1,pcs,280,280,No,
+F. Tools,F7,Epoxy / silicone sealant,,1,lot,180,180,No,"Cable glands, gasket"
+F. Tools,F8,Tape measure + spirit level,,1,set,200,200,No,Calibration and mounting
+G. Software,G1,Next.js + TypeScript,Web app framework,1,license,0,0,Yes,Free / open source
+G. Software,G2,Supabase Postgres + Realtime,Database + live updates,1,account,0,0,Yes,Free tier
+G. Software,G3,Vercel,Hosting,1,account,0,0,Yes,Free tier
+G. Software,G4,Open-Meteo API,5-day forecast,1,service,0,0,Yes,"Free, no API key"
+G. Software,G5,Recharts,Charts,1,library,0,0,Yes,Open source
+G. Software,G6,PlatformIO + VS Code,Firmware IDE,1,license,0,0,Yes,Free
+G. Software,G7,Arduino libraries,"WiFiManager, ArduinoJson, Preferences, HTTPClient, ArduinoOTA",1,set,0,0,Yes,Free
+G. Software,G8,Telegram Bot API,Alert channel,1,service,0,0,Yes,Free
+,,,,,,,,,
+SUMMARY,,Required build (A-D),,,,,,6850,,Shopee PH estimates; range PHP 6,000-9,000
+SUMMARY,,Optional add-ons (E),,,,,,3530,,Only if purchased
+SUMMARY,,Tools (F),,,,,,3360,,Reusable; range PHP 2,500-4,500
+SUMMARY,,Software (G),,,,,,0,,All free
+SUMMARY,,Grand total (required + all optional + tools),,,,,,13740,,Excludes shipping
